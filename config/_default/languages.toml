@@ -1,0 +1,12 @@
+[en]
+title = "Qiuyu Tang"
+weight = 1
+LanguageName = "EN"
+contentDir = "content/english"
+
+[CN]
+title = "唐秋语"
+contentDir = "content/chinese" 
+weight = 2
+LanguageDirection = "rtl" 
+LanguageName = "CN"

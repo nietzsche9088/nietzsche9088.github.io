@@ -1,0 +1,41 @@
+  [[main]]
+  name = "主页"
+  identifier = "main"
+  weight = 100
+  url = "/cn/"
+
+  [[main]]
+  name = "动态"
+  weight = 200
+  identifier = "posts"
+  url = "/cn/post/"
+
+  [[main]]
+  name = "简历"
+  weight = 300
+  identifier = "CV"
+  url = "/cn/CV/"
+
+  [[main]]
+  name = "相关"
+  weight = 400
+  identifier = "about"
+  url = "/cn/about/"
+
+ [[main]]
+  name = "产出"
+  weight = 500
+  identifier = "publication"
+  url = "/cn/publication/"
+
+  [[main]]
+  name = "联系方式"
+  weight = 600
+  identifier = "contact"
+  url = "/cn/contact/"
+
+  [[footer]]
+  name = "imprint"
+  weight = 1
+  identifier = "imprint"
+  url = "/imprint/"
