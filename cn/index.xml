@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>唐秋语</title>
+    <link>http://localhost:1313/cn/</link>
+    <description>Recent content on 唐秋语</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Mon, 14 Aug 2023 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:1313/cn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>CV</title>
+      <link>http://localhost:1313/cn/cv/</link>
+      <pubDate>Mon, 04 Dec 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/cn/cv/</guid>
+      
+        <description> </description>
+      
+    </item>
+    
+    <item>
+      <title>2023秋</title>
+      <link>http://localhost:1313/cn/post/23fall/</link>
+      <pubDate>Mon, 14 Aug 2023 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/cn/post/23fall/</guid>
+      
+        <description>开始博士生项目的第一学期
+课程 CSE 406 研究方法 - 讲师: Dr. Jeff Heflin，Dr. Maryann DiEdwardo</description>
+      
+    </item>
+    
+    <item>
+      <title>唐秋语</title>
+      <link>http://localhost:1313/cn/contact/</link>
+      <pubDate>Fri, 08 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/cn/contact/</guid>
+      
+        <description>Contact Page</description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cn/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/cn/about/</guid>
+      
+        <description>省流版 唐秋语 一年级博士生 专业：计算机科学 里海大学 导师： Dr. Aparna Bharati 研究方向：媒体取证、计算机视觉 </description>
+      
+    </item>
+    
+    <item>
+      <title></title>
+      <link>http://localhost:1313/cn/publication/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>http://localhost:1313/cn/publication/</guid>
+      
+        <description>论文 跳过
+项目 跳过</description>
+      
+    </item>
+    
+  </channel>
+</rss>
