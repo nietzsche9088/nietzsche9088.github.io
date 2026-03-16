@@ -39,7 +39,7 @@
   type: preprint
   category: preprint
   featured: true
-  summary: Provides a systematic and structured overview of protection mechanisms against diffusion-based image manipulation, organized along three dimensions: threat model, victim image type, and protection paradigm. 
+  summary: "Provides a systematic and structured overview of protection mechanisms against diffusion-based image manipulation, organized along three dimensions: threat model, victim image type, and protection paradigm."
   links:
     paper: Under review
 - title: "StyleProtect: Safeguarding Artistic Identity in Fine-tuned Diffusion Models"
@@ -70,7 +70,7 @@
     paper: https://openreview.net/pdf/af043c958343525b19a03a52c61fc3784fc9b7c5.pdf
     poster: https://iclr.cc/virtual/2025/35699
     project: https://iclr.cc/virtual/2025/35699
-- title: Is Perturbation-Based Image Protection Disruptive to Image Editing?
+- title: "Is Perturbation-Based Image Protection Disruptive to Image Editing?"
   authors:
     - Qiuyu Tang
     - Bonor Ayambem
