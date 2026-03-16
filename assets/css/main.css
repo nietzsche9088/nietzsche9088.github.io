@@ -209,9 +209,10 @@ li {
 }
 
 .hero-photo {
-  width: min(100%, 320px);
-  aspect-ratio: 1 / 1.08;
+  width: min(100%, 300px);
+  aspect-ratio: 2 / 3;
   object-fit: cover;
+  object-position: center top;
   border-radius: 30px;
   box-shadow: 18px 18px 36px rgba(189, 160, 199, 0.35), -12px -12px 28px rgba(255, 255, 255, 0.85);
 }
