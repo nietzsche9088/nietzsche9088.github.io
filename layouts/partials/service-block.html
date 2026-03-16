@@ -1,0 +1,18 @@
+<section class="card service-block">
+  <h2>{{ .title }}</h2>
+  {{ if gt (len .items) 0 }}
+    <div class="service-list">
+      {{ range .items }}
+        <article class="service-item">
+          <p class="eyebrow">{{ .year }}</p>
+          <h3>{{ .role }}</h3>
+          <p class="service-org">{{ .organization }}</p>
+          <p>{{ .details }}</p>
+          {{ with .link }}<a class="text-link" href="{{ . }}" target="_blank" rel="noopener">Related link</a>{{ end }}
+        </article>
+      {{ end }}
+    </div>
+  {{ else }}
+    <p class="muted">{{ .empty }}</p>
+  {{ end }}
+</section>

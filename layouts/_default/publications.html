@@ -1,0 +1,56 @@
+{{ define "main" }}
+  {{ $profile := site.Data.profile }}
+  {{ $items := sort site.Data.publications "year" "desc" }}
+  {{ $publications := where $items "type" "publication" }}
+  {{ $preprints := where $items "type" "preprint" }}
+  {{ $projects := where $items "type" "project" }}
+  <section class="page-section page-shell">
+    <div class="section-heading">
+      <p class="section-kicker">Research Output</p>
+      <h1>{{ .Title }}</h1>
+      <p class="section-lead">Browse publications, preprints, and projects. Use the filters to focus on conference, workshop, or preprint entries.</p>
+    </div>
+
+    <div class="filter-row card" aria-label="Publication filters">
+      <button class="filter-chip is-active" type="button" data-filter="all">All</button>
+      <button class="filter-chip" type="button" data-filter="conference">Conference</button>
+      <button class="filter-chip" type="button" data-filter="workshop">Workshop</button>
+      <button class="filter-chip" type="button" data-filter="preprint">Preprint</button>
+    </div>
+
+    <div class="stack">
+      <section class="stack-section">
+        <div class="stack-heading">
+          <h2>Publications</h2>
+        </div>
+        {{ range $publications }}
+          {{ partial "publication-item.html" (dict "item" . "profile" $profile) }}
+        {{ else }}
+          <div class="card empty-state">Publications will appear here as they are added.</div>
+        {{ end }}
+      </section>
+
+      <section class="stack-section">
+        <div class="stack-heading">
+          <h2>Preprints</h2>
+        </div>
+        {{ range $preprints }}
+          {{ partial "publication-item.html" (dict "item" . "profile" $profile) }}
+        {{ else }}
+          <div class="card empty-state">Preprints will appear here as they are added.</div>
+        {{ end }}
+      </section>
+
+      <section class="stack-section">
+        <div class="stack-heading">
+          <h2>Projects</h2>
+        </div>
+        {{ range $projects }}
+          {{ partial "publication-item.html" (dict "item" . "profile" $profile) }}
+        {{ else }}
+          <div class="card empty-state">Projects will appear here as they are added.</div>
+        {{ end }}
+      </section>
+    </div>
+  </section>
+{{ end }}

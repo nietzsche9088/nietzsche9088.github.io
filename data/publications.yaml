@@ -1,0 +1,105 @@
+- title: "MicroFakes: A Dataset for Small but Semantically Relevant Image Manipulations"
+  authors:
+    - Joshua Krinsky
+    - Qiuyu Tang
+    - Aparna Bharati
+  venue: arXiv
+  year: 2026
+  type: preprint
+  category: preprint
+  featured: true
+  summary: Introduces a dataset for small but semantically relevant image manipulations.
+  links:
+    paper: Under review
+- title: "ReVA: A New Scene-Centric Dataset for Remote Sensing Video Question Answering"
+  authors:
+    - Zhen Yao
+    - Likai Wang
+    - Yuming Yang
+    - Zhihao Zheng
+    - Bo Lang
+    - Qiuyu Tang
+    - Yuehai Yang
+    - Jumal Barker
+    - Mooi Choo Chuah
+  venue: arXiv
+  year: 2026
+  type: preprint
+  category: preprint
+  featured: true
+  summary: Introduces a large-scale dataset for remote sensing video question answering, designed to assess spatiotemporal, scene-centric, and reasoning-oriented capabilities of MLLMs.
+  links:
+    paper: Under review
+- title: "A Survey of Origin Protection Methods against Diffusion-based Image Editing" 
+  authors:
+    - Qiuyu Tang
+    - Aparna Bharati
+  venue: arXiv
+  year: 2026
+  type: preprint
+  category: preprint
+  featured: true
+  summary: Provides a systematic and structured overview of protection mechanisms against diffusion-based image manipulation, organized along three dimensions: threat model, victim image type, and protection paradigm. 
+  links:
+    paper: Under review
+- title: "StyleProtect: Safeguarding Artistic Identity in Fine-tuned Diffusion Models"
+  authors:
+    - Qiuyu Tang
+    - Joshua Krinsky
+    - Aparna Bharati
+  venue: arXiv
+  year: 2025
+  type: preprint
+  category: preprint
+  featured: true
+  summary: Introduces a lightweight protection strategy for defending artistic style against imitation through fine-tuned diffusion models.
+  links:
+    arxiv: https://arxiv.org/abs/2509.13711
+    paper: https://arxiv.org/pdf/2509.13711
+- title: "Watermarks vs. Perturbations for Preventing AI-based Style Editing"
+  authors:
+    - Qiuyu Tang
+    - Aparna Bharati
+  venue: GenAI Watermarking Workshop at ICLR
+  year: 2025
+  type: publication
+  category: workshop
+  featured: true
+  summary: Compares traditional watermarking and adversarial protection methods for preventing unauthorized style editing with Stable Diffusion.
+  links:
+    paper: https://openreview.net/pdf/af043c958343525b19a03a52c61fc3784fc9b7c5.pdf
+    poster: https://iclr.cc/virtual/2025/35699
+    project: https://iclr.cc/virtual/2025/35699
+- title: Is Perturbation-Based Image Protection Disruptive to Image Editing?
+  authors:
+    - Qiuyu Tang
+    - Bonor Ayambem
+    - Mooi Choo Chuah
+    - Aparna Bharati
+  venue: IEEE International Conference on Image Processing
+  year: 2025
+  type: publication
+  category: conference
+  featured: true
+  summary: Perturbation-based image protection methods often fail against diffusion-based editing and can even unintentionally strengthen prompt-guided edits instead of preventing them.
+  links:
+    paper: https://www.researchgate.net/publication/392465930_Is_Perturbation-Based_Image_Protection_Disruptive_to_Image_Editing
+    code: https://github.com/CV-Lehigh/perturb2protect-disruptive-or-helpful
+    project: https://arxiv.org/abs/2506.04394
+- title: Exploring Saliency Bias in Manipulation Detection
+  authors:
+    - Joshua Krinsky
+    - Alan Bettis
+    - Qiuyu Tang
+    - Daniel Moreira
+    - Aparna Bharati
+  venue: IEEE International Conference on Image Processing
+  year: 2024
+  type: publication
+  category: conference
+  featured: true
+  summary: Studies how semantic and visual saliency influence image manipulation detection and motivates more semantic-aware forensic analysis.
+  links:
+    paper: https://ecommons.luc.edu/context/cs_facpubs/article/1392/viewcontent
+    code: https://github.com/CV-Lehigh/Bias_IMD
+    project: https://danielmoreira.github.io/publication/2024_icip/

@@ -1,0 +1,28 @@
+{{ $profile := site.Data.profile }}
+<section class="page-section page-shell hero-grid">
+  <div class="card hero-photo-card">
+    <img class="hero-photo" src="{{ $profile.photo }}" alt="Portrait of {{ $profile.name }}">
+  </div>
+  <div class="card hero-content">
+    <p class="section-kicker">Home</p>
+    <h1>{{ $profile.name }}</h1>
+    <p class="hero-title">{{ $profile.title }}</p>
+    <p class="hero-affiliation">{{ $profile.department }}, {{ $profile.university }}</p>
+    <p class="hero-meta"><a href="mailto:{{ $profile.email }}">{{ $profile.email }}</a></p>
+    <div class="link-row">
+      <a class="mini-link" href="{{ $profile.google_scholar }}" target="_blank" rel="noopener">Google Scholar</a>
+      <a class="mini-link" href="{{ $profile.github }}" target="_blank" rel="noopener">GitHub</a>
+      <a class="mini-link" href="{{ $profile.linkedin }}" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="mini-link" href="{{ $profile.cv }}" target="_blank" rel="noopener">CV</a>
+    </div>
+    <p class="hero-bio">{{ $profile.bio }}</p>
+    <div class="interest-block">
+      <h2>Research Interests</h2>
+      <ul class="pill-list">
+        {{ range $profile.research_interests }}
+          <li>{{ . }}</li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</section>

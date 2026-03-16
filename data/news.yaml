@@ -1,0 +1,23 @@
+- date: 2026-03-07
+  title: Co-organized VALED at WACV 2026
+  summary: Helped organize the VALED workshop focused on Democratization vs. Copyright Dilemma in the Generative AI Era.
+  external_url: https://aparnabharati.github.io/valed-workshop-2026/
+- date: 2025-09-17
+  title: StyleProtect released as a preprint
+  summary: Shared new work on protecting artistic identity in fine-tuned diffusion models.
+  external_url: https://arxiv.org/abs/2509.13711
+- date: 2025-05-20
+  title: ICIP 2025 paper accepted
+  summary: Published work on effects of perturbation-based image protection on image editing.
+  external_url: https://www.researchgate.net/publication/392465930_Is_Perturbation-Based_Image_Protection_Disruptive_to_Image_Editing
+- date: 2025-03-06
+  title: Workshop paper at WMARK@ICLR 2025
+  summary: Presented work comparing watermarks and adversarial perturbations for preventing AI-based style editing.
+  external_url: https://iclr.cc/virtual/2025/35699
+- date: 2024-09-27
+  title: ICIP 2024 paper accepted
+  summary: Published work on saliency bias in image manipulation detection.
+  external_url: https://doi.org/10.1109/ICIP51287.2024.10648063
+- date: 2023-08-14
+  title: Started the PhD program at Lehigh University
+  summary: Began the PhD journey in Computer Science and Engineering and started research with the Lehigh SeeVi Lab.

@@ -1,0 +1,28 @@
+{{ define "main" }}
+  <section class="page-section page-shell">
+    <div class="section-heading">
+      <p class="section-kicker">Research</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="section-lead">{{ . }}</p>{{ end }}
+    </div>
+    <div class="research-grid">
+      <article class="card research-card">
+        <div class="rich-text">{{ .Content }}</div>
+      </article>
+      <aside class="card sidebar-card">
+        <h2>Current Focus</h2>
+        <ul class="compact-list">
+          {{ range site.Data.profile.research_interests }}
+            <li>{{ . }}</li>
+          {{ end }}
+        </ul>
+        <h2>Selected Work</h2>
+        <ul class="compact-list">
+          {{ range first 3 (sort (where site.Data.publications "featured" true) "year" "desc") }}
+            <li><a href="{{ "/publications/" | relURL }}">{{ .title }}</a></li>
+          {{ end }}
+        </ul>
+      </aside>
+    </div>
+  </section>
+{{ end }}

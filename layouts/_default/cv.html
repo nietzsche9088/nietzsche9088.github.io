@@ -1,0 +1,17 @@
+{{ define "main" }}
+  {{ $cv := site.Data.profile.cv }}
+  <section class="page-section page-shell">
+    <div class="section-heading">
+      <p class="section-kicker">Curriculum Vitae</p>
+      <h1>{{ .Title }}</h1>
+      <p class="section-lead">Preview the current CV in-page or download the PDF directly.</p>
+    </div>
+    <div class="card cv-actions">
+      <a class="button-link" href="{{ $cv }}" target="_blank" rel="noopener">Open PDF</a>
+      <a class="button-link button-link-secondary" href="{{ $cv }}" download>Download CV</a>
+    </div>
+    <div class="card pdf-frame">
+      <iframe src="{{ $cv }}" title="Qiuyu Tang CV PDF preview"></iframe>
+    </div>
+  </section>
+{{ end }}

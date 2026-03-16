@@ -1,0 +1,23 @@
+name: Qiuyu Tang
+title: PhD Student in Computer Science and Engineering
+university: Lehigh University
+department: Computer Science and Engineering
+advisor_name: Aparna Bharati
+advisor_url: https://www.aparnabharati.com/
+email: qit220@lehigh.edu
+office: Office 224, 113 Research Drive, Bethlehem, PA
+photo: /images/avatar.png
+cv: /files/QiuyuTang_CV.pdf
+github: https://github.com/nietzsche9088/
+linkedin: https://www.linkedin.com/in/qiuyutang/
+google_scholar: https://scholar.google.com/scholar?q=Qiuyu+Tang+Lehigh+University
+bio: >
+  Qiuyu Tang is a PhD student in Computer Science and Engineering at Lehigh University,
+  advised by Aparna Bharati. Her research focuses on trustworthy visual computing,
+  spanning media forensics, origin protection, generative image editing, and adversarial robustness.
+  She works on methods that make image generation and editing more secure, interpretable, and reliable.
+research_interests:
+  - Media forensics and authenticity
+  - Generative models and image editing
+  - Adversarial robustness and origin protection
+  - Computer vision for trustworthy AI

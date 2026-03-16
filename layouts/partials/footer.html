@@ -1,0 +1,27 @@
+<footer class="site-footer">
+  <p>&copy; {{ now.Year }} {{ site.Data.profile.name }}. Built with Hugo.</p>
+</footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+  }
+
+  const chips = document.querySelectorAll('[data-filter]');
+  const items = document.querySelectorAll('[data-category]');
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const filter = chip.dataset.filter;
+      chips.forEach((entry) => entry.classList.toggle('is-active', entry === chip));
+      items.forEach((item) => {
+        const match = filter === 'all' || item.dataset.category === filter;
+        item.hidden = !match;
+      });
+    });
+  });
+</script>

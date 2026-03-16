@@ -1,0 +1,43 @@
+baseURL = "https://qiuyutang.com/"
+languageCode = "en-us"
+title = "Qiuyu Tang"
+enableRobotsTXT = true
+disableKinds = ["taxonomy", "term"]
+
+[params]
+description = "Academic website of Qiuyu Tang, PhD student in Computer Science and Engineering at Lehigh University."
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
+
+[menu]
+  [[menu.main]]
+    name = "Home"
+    pageRef = "/"
+    weight = 10
+  [[menu.main]]
+    name = "Research"
+    pageRef = "/research"
+    weight = 20
+  [[menu.main]]
+    name = "Publications"
+    pageRef = "/publications"
+    weight = 30
+  [[menu.main]]
+    name = "News"
+    pageRef = "/news"
+    weight = 40
+  [[menu.main]]
+    name = "Service"
+    pageRef = "/service"
+    weight = 50
+  [[menu.main]]
+    name = "CV"
+    pageRef = "/cv"
+    weight = 60
+  [[menu.main]]
+    name = "Contact"
+    pageRef = "/contact"
+    weight = 70

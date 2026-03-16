@@ -1,0 +1,24 @@
+<header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="nav-shell">
+    <a class="brand" href="{{ "/" | relURL }}">
+      <span class="brand-name">{{ site.Data.profile.name }}</span>
+      <span class="brand-role">{{ site.Data.profile.title }}</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <ul>
+        {{ $current := . }}
+        {{ range site.Menus.main }}
+          {{ $isActive := $current.IsMenuCurrent "main" . }}
+          {{ if not $isActive }}
+            {{ $isActive = $current.HasMenuCurrent "main" . }}
+          {{ end }}
+          <li><a href="{{ .URL }}"{{ if $isActive }} aria-current="page"{{ end }}>{{ .Name }}</a></li>
+        {{ end }}
+      </ul>
+    </nav>
+  </div>
+</header>

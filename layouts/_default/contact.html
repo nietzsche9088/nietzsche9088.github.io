@@ -1,0 +1,32 @@
+{{ define "main" }}
+  {{ $profile := site.Data.profile }}
+  <section class="page-section page-shell">
+    <div class="section-heading">
+      <p class="section-kicker">Contact</p>
+      <h1>{{ .Title }}</h1>
+      <p class="section-lead">The best way to reach out is by email. External profiles are linked below.</p>
+    </div>
+    <div class="contact-grid">
+      <article class="card contact-card">
+        <h2>Email</h2>
+        <a href="mailto:{{ $profile.email }}">{{ $profile.email }}</a>
+      </article>
+      <article class="card contact-card">
+        <h2>Office</h2>
+        <p>{{ $profile.office }}</p>
+      </article>
+      <article class="card contact-card">
+        <h2>Google Scholar</h2>
+        <a href="{{ $profile.google_scholar }}" target="_blank" rel="noopener">Scholar profile</a>
+      </article>
+      <article class="card contact-card">
+        <h2>GitHub</h2>
+        <a href="{{ $profile.github }}" target="_blank" rel="noopener">github.com/nietzsche9088</a>
+      </article>
+      <article class="card contact-card">
+        <h2>LinkedIn</h2>
+        <a href="{{ $profile.linkedin }}" target="_blank" rel="noopener">linkedin.com/in/qiuyutang</a>
+      </article>
+    </div>
+  </section>
+{{ end }}

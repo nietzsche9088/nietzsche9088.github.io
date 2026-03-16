@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Research | Qiuyu Tang</title>
+<meta name="description" content="Research areas and current directions">
+<meta name="author" content="Qiuyu Tang">
+<link rel="icon" href="/favicons/favicon.ico">
+
+<link rel="stylesheet" href="/css/main.min.69bacb2186f1ba02ab37267f02822f3076d9cc682afbfb6c7186e1a68fcc9d12.css" integrity="sha256-abrLIYbxugKrNyZ/AoIvMHbZzGgq&#43;/tscYbhpo/MnRI=">
+
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="site-header">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <div class="nav-shell">
+    <a class="brand" href="/">
+      <span class="brand-name">Qiuyu Tang</span>
+      <span class="brand-role">PhD Student in Computer Science and Engineering</span>
+    </a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      Menu
+    </button>
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <ul>
+        
+        
+          
+          
+            
+          
+          <li><a href="/">Home</a></li>
+        
+          
+          
+          <li><a href="/research/" aria-current="page">Research</a></li>
+        
+          
+          
+            
+          
+          <li><a href="/publications/">Publications</a></li>
+        
+          
+          
+            
+          
+          <li><a href="/news/">News</a></li>
+        
+          
+          
+            
+          
+          <li><a href="/service/">Service</a></li>
+        
+          
+          
+            
+          
+          <li><a href="/cv/">CV</a></li>
+        
+          
+          
+            
+          
+          <li><a href="/contact/">Contact</a></li>
+        
+      </ul>
+    </nav>
+  </div>
+</header>
+
+      <main class="main-content" id="main-content">
+        
+  <section class="page-section page-shell">
+    <div class="section-heading">
+      <p class="section-kicker">Research</p>
+      <h1>Research</h1>
+      <p class="section-lead">Research areas and current directions</p>
+    </div>
+    <div class="research-grid">
+      <article class="card research-card">
+        <div class="rich-text"><p>The research agenda centers on trustworthy visual computing: understanding how generative models alter media, how authenticity can be verified, and how visual systems can be protected against misuse. The projects below reflect a blend of computer vision, AI security, and human-centered questions about how images are created, edited, and trusted.</p>
+<h2 id="generative-models-and-image-editing">Generative Models and Image Editing</h2>
+<p>This line of work studies how modern generative models edit and transform images, especially diffusion-based systems that make high-quality editing widely accessible. The goal is to better understand controllability, misuse, and protection when models are used for style transfer, content modification, or identity-preserving editing.</p>
+<p>Current interests include protection against unauthorized style imitation, evaluation of editing pipelines, and practical mechanisms that help creators retain control over their visual assets.</p>
+<h2 id="media-forensics-and-authenticity">Media Forensics and Authenticity</h2>
+<p>Media forensics research focuses on detecting manipulations, reasoning about visual evidence, and making authenticity judgments more reliable. This includes understanding how dataset biases, semantic context, and viewer attention affect image manipulation detection systems.</p>
+<p>The broader aim is to support trustworthy multimedia pipelines with methods that are not only accurate, but also better aligned with real-world misinformation scenarios.</p>
+<h2 id="adversarial-robustness-and-protection">Adversarial Robustness and Protection</h2>
+<p>This direction explores adversarial perturbations, origin protection, and robust defenses for images exposed to downstream generative models. The main question is how to protect creators and sensitive media when models can otherwise edit, imitate, or reuse content without authorization.</p>
+<p>The work combines robustness analysis with practical protection strategies that remain lightweight, effective, and usable in realistic workflows.</p>
+</div>
+      </article>
+      <aside class="card sidebar-card">
+        <h2>Current Focus</h2>
+        <ul class="compact-list">
+          
+            <li>Media forensics and authenticity</li>
+          
+            <li>Generative models and image editing</li>
+          
+            <li>Adversarial robustness and origin protection</li>
+          
+            <li>Computer vision for trustworthy AI</li>
+          
+        </ul>
+        <h2>Selected Work</h2>
+        <ul class="compact-list">
+          
+            <li><a href="/publications/">StyleProtect: Safeguarding Artistic Identity in Fine-tuned Diffusion Models</a></li>
+          
+            <li><a href="/publications/">Watermarks vs. Perturbations for Preventing AI-based Style Editing</a></li>
+          
+            <li><a href="/publications/">Exploring Saliency Bias in Manipulation Detection</a></li>
+          
+        </ul>
+      </aside>
+    </div>
+  </section>
+
+      </main>
+      <footer class="site-footer">
+  <p>&copy; 2026 Qiuyu Tang. Built with Hugo.</p>
+</footer>
+<script>
+  const navToggle = document.querySelector('.nav-toggle');
+  const nav = document.querySelector('.site-nav');
+  if (navToggle && nav) {
+    navToggle.addEventListener('click', () => {
+      const expanded = navToggle.getAttribute('aria-expanded') === 'true';
+      navToggle.setAttribute('aria-expanded', String(!expanded));
+      nav.classList.toggle('is-open');
+    });
+  }
+
+  const chips = document.querySelectorAll('[data-filter]');
+  const items = document.querySelectorAll('[data-category]');
+  chips.forEach((chip) => {
+    chip.addEventListener('click', () => {
+      const filter = chip.dataset.filter;
+      chips.forEach((entry) => entry.classList.toggle('is-active', entry === chip));
+      items.forEach((item) => {
+        const match = filter === 'all' || item.dataset.category === filter;
+        item.hidden = !match;
+      });
+    });
+  });
+</script>
+
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+<section class="page-section page-shell">
+  <div class="section-heading split-heading">
+    <div>
+      <p class="section-kicker">Recent News</p>
+      <h2>Highlights and updates</h2>
+    </div>
+    <a class="text-link" href="{{ "/news/" | relURL }}">View all news</a>
+  </div>
+  <div class="news-grid">
+    {{ range first 3 (sort site.Data.news "date" "desc") }}
+      <article class="card news-card">
+        <p class="eyebrow">{{ time.Format "Jan 2, 2006" .date }}</p>
+        <h3>{{ .title }}</h3>
+        <p>{{ .summary }}</p>
+      </article>
+    {{ end }}
+  </div>
+</section>

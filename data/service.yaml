@@ -1,0 +1,24 @@
+workshop:
+  - role: Organizer
+    organization: Visual Art, Generative AI, and the Legal/Ethical Dilemma (VALED) Workshop, WACV 2026
+    year: 2026
+    details: Organized and coordinated a peer-reviewed workshop, managed the review process and author communications, chaired sessions, delivered opening and closing remarks, and developed the workshop website.
+    link: https://aparnabharati.github.io/valed-workshop-2026/
+
+reviewer: 
+  - role: Reviewer
+    organization: VALED workshop at WACV 2026
+    year: 2026
+    details: Reviewed 3 short papers for the VALED workshop at WACV 2026.
+
+teaching:
+  - role: Teaching Assistant
+    organization: CSE 160 – Introduction to Data Science, Lehigh University
+    year: Fall 2024 and Fall 2025
+    details: Led lab sessions and weekly office hours, supported student learning, graded coursework, proctored exams, and assisted with course administration.
+
+mentoring:
+  - role: Undergraduate Research Mentor
+    organization: Lehigh University
+    year: 2026
+    details: Mentored an undergraduate student through research collaboration, technical discussions, and academic guidance in the lab.

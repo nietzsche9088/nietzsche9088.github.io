@@ -1,0 +1,16 @@
+{{ define "main" }}
+  {{ $service := site.Data.service }}
+  <section class="page-section page-shell">
+    <div class="section-heading">
+      <p class="section-kicker">Academic Service</p>
+      <h1>{{ .Title }}</h1>
+      {{ with .Description }}<p class="section-lead">{{ . }}</p>{{ end }}
+    </div>
+    <div class="service-grid">
+      {{ partial "service-block.html" (dict "title" "Workshop" "items" $service.workshop "empty" "Workshop roles will be added here as activities continue.") }}
+      {{ partial "service-block.html" (dict "title" "Reviewer" "items" $service.reviewer "empty" "Reviewer service will be listed here as it becomes available.") }}
+      {{ partial "service-block.html" (dict "title" "Teaching" "items" $service.teaching "empty" "Teaching activities will be listed here.") }}
+      {{ partial "service-block.html" (dict "title" "Mentoring" "items" $service.mentoring "empty" "Mentoring activities will be listed here.") }}
+    </div>
+  </section>
+{{ end }}
